@@ -41,7 +41,7 @@
 
         let lat = $('#latitude').val()
         let long = $('#longtitude').val()
-        let apiURL = "https://maps.googleapis.com/maps/api/geocode/json?latlng=" + lat + "," + long + "&key=AIzaSyBRKbpPz-jl8MjaiIKuke2JLSgcKeFObiY"
+        let apiURL = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${long}&key=AIzaSyBRKbpPz-jl8MjaiIKuke2JLSgcKeFObiY`
         
         fetch(apiURL)
         .then((res) => res.json())
