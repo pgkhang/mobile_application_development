@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-port = process.env.PORT || 3000
+port = process.env.PORT || 8080
 
 app.get("/api/getdistance", function (req, res) {
     // Retrieve and store the two coordinates with latitude and longtitude converted to radian
